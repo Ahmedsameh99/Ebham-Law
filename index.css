@@ -1,0 +1,80 @@
+/* index.css */
+
+/* Custom scrollbar for an elegant look */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0f0f0f;
+}
+::-webkit-scrollbar-thumb {
+    background: #A4865D;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #886c47;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Ensure smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Footer Custom Styles */
+footer h3 {
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+footer a {
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    transform: translateX(-5px);
+}
+
+#scroll-top {
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+
+#scroll-top:hover {
+    opacity: 1;
+    transform: translateY(-5px) scale(1.1);
+}
+
+.fixed-btn-hover {
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.fixed-btn-hover:hover {
+    transform: scale(1.1) translateY(-5px);
+}
+
+/* Animated Blobs */
+@keyframes blob {
+    0% { transform: translate(0px, 0px) scale(1); }
+    33% { transform: translate(30px, -50px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+    100% { transform: translate(0px, 0px) scale(1); }
+}
+
+.animate-blob {
+    animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+    animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+    animation-delay: 4s;
+}
